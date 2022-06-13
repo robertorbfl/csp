@@ -1,0 +1,320 @@
+/* ######## CSS do Cabeçalho ########## */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background: linear-gradient(#87CEFA, #FEFEFE);
+	padding: 10px;
+	width: 100%;
+	min-width: 350px;
+}
+header .conteiner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 980px;
+	height: 80px;
+	margin: auto;
+	min-width: 350px;
+}
+header nav ul {
+	display: flex;
+}
+header nav ul li {
+	list-style: none;
+}
+header nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #000000;
+	padding: 20px;
+	transition: all 250ms linear 0s;
+}
+header nav li a:hover {
+	color: #FEFEFE;
+	text-shadow: #000000 1px 1px;
+}
+header .conteiner img {
+	height: 70px;
+}
+
+/* ################################# CSS da página inicial ##################################### */
+main {
+	background: #FEFEFE;
+}
+.banner {
+    text-align: center;
+	width:  100%;
+	height: 60%;
+	padding:  10px 0;
+	border-radius: 10px;
+}
+.banner > img {
+	opacity: 0.7;
+	box-shadow: 10px 5px 5px black;
+	border-radius: 15px;
+}
+.apresentacao {
+    justify-content: center;
+    padding: 0px 45px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 600px;
+	box-shadow: 1px 1px 10px 1px;
+
+ }
+ .titulo-apresentacao {
+	text-align: center;
+	font-size: 2em;
+	padding: 10px;
+	font-family: 'Grape Nuts', cursive;
+    font-family: 'Vollkorn', serif;
+    margin: 40px -10px 0px -4px;
+}
+.apresentacao p {
+	font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    text-align: inherit;
+    padding: 10px;
+    width: 100%;
+	
+}
+.ecobag {
+	float: right;
+	width: 320px;
+	height: fit-content;
+	padding-top: 20px;
+	box-shadow: 1px 1px 1px 1px;
+
+}
+video {
+	display: block;
+	margin: 0 auto;
+    padding: 20px;
+}
+#titulo-video {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Vollkorn', serif;
+	text-align: center;
+	font-size: 25px;
+	margin: 0 0px -30px;
+}
+.titulo-mapa {
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Grape Nuts', cursive;
+    font-family: 'Vollkorn', serif;
+    margin: 20px;
+}
+.mapa {
+	background: linear-gradient(#FEFEFE, #87CEFA);
+}
+.mapa p {
+	margin: auto;
+    display: table;
+    background: #87CEFA;
+}
+.posicao-mapa {
+	margin: auto;
+	display: block;
+}
+/* ###### CSS da página de produtos #### */
+.menu {
+	display: flex;
+	justify-content: baseline;
+	align-items: calc(20%);
+	min-height: 100vh;
+	padding: 20px;
+	padding-top: 90px;
+	
+}
+.menu-lateral {
+	position: relative;
+	height: 350px;
+	background: #87CEFA;
+	background: linear-gradient(to right,  #87CEFA, #FEFEFE);
+	width: 250px;
+	border-radius: 1em;
+	transition: 0.5s;  
+}	
+.menu-lateral ul {
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 16px;
+	padding-top: 50px
+}
+.menu-lateral ul li {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-left: 5px solid #87CEFA;
+}
+.menu-lateral ul li a {
+	position: relative;
+	display: flex;
+	width: 100%;
+	text-decoration: none;
+	font-size: 20px;
+    color: #000000
+}
+.menu-lateral ul li a:hover {
+	color: #87CEFA;
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+.menu-lateral ul li a .icon {
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 70px;
+}
+.menu-lateral ul li a .icon ion-icon {
+	position: relative;
+	font-size: 1.5em;
+	z-index: 1;
+}
+.menu-lateral ul li a .categoria-menu {
+	position: relative;
+	
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+    white-space: nowrap;
+}
+div .conteiner {
+	display: flex;
+	justify-content: center;
+}
+.grid-produtos {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+	margin: 20px;
+}
+.grid-produtos li {
+	display: table-cell;
+	justify-content: right;
+	height: 330px;
+	width: 240;
+	border: 1px solid #87CEFA;
+	box-shadow: 5px 5px 10px #888888;
+	text-align: -webkit-center;
+	margin: 30px;
+	background: #FEFEFE
+}
+.grid-produtos li:hover {
+	height: 20%;
+	width: 20%;
+	transition: 0.5ms;
+}	
+.grid-produtos li p {
+	display: table-cell;
+	font-size: 17px;
+	font-family: 'Vollkorn', serif;
+	margin-top: 4px;
+	border-top: double;
+	color: #5dadee
+}
+.grid-produtos li .foto-produto {
+	margin: 10px;
+	width: 188px;
+    height: 250px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #000000;
+}
+.grid-produtos li .foto-produto:hover{
+	height: 100%;
+	width: 100%;
+	transition: 0.5ms;
+}	
+.footer-alternativo {
+	background: linear-gradient(#FEFEFE, #87CEFA);
+
+}
+footer {
+	text-align: center;
+	background: #87CEFA;
+	padding: 50px 0;
+}
+.copyright {
+	font-size: 15px;
+    padding:  20px;
+}    
+/* ############################################ CSS da página de contatos ############################################ */
+form {
+	margin: 40px 40px;
+}
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+}
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+
+}
+form legend {
+	padding: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.checkbox {
+	margin: 20px;
+}
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #87CEFA;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s background;
+}
+.enviar:hover {
+	background: whitesmoke;
+	font-weight: bolder;
+	font-size: 20px;
+	color: #87CEFA;
+	cursor: pointer;
+}
+/*################################### CSS da página do jogo #################################*/
+main .jogo {
+	display: inline-block;
+	width: 100%;
+}
+#jogo {
+	width: 1200px;
+	height: 800px;
+	padding-left: 15px;
+}
+.texto-jogo {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+}
+.texto-jogo li {
+	padding: 10px;
+	font-weight: bold;
+}
+.palavra-vermelha {
+	color: red;
+	display: inline-block;
+}

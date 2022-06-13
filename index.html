@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<htmal lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> Cão Sem Pluma</title>
+		<link rel="stylesheet" href="./css/responsive.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">  -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Vollkorn:ital,wght@1,700&display=swap" rel="stylesheet"> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap"
+			rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<!-- cabeçalho -->
+			<div class="conteiner">
+				<!-- logo superior esquerdo cabeçalho -->
+				<img id="logo" src="./imagens/marca/logo.png" alt="logo da marca Cão Sem Pluma">
+				<!-- menu superior lado direito -->
+				<div class="menu-section">
+					<div class="container-menu">
+						<!-- construção do menu para responsividade -->
+						<input type="checkbox" id="checkbox-menu">
+						<label class="menu-button-container" for="checkbox-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+						<nav>
+							<!-- menu superior direito para desktop -->
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Produtos</a></li>
+								<li><a href="#">Contato</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- banner rotativo em javascript -->
+		<div class="banner">
+			<img src="" alt="" class="image-banner">
+		</div>
+		<script src="./js/script.js"></script>
+		<main>
+			<section class="apresentacao">
+				<h2 class="titulo-apresentacao">Sobre a Cão Sem Pluma</h2>
+				<img src="./imagens/ecobag/ecobag.jpg" class="ecobag">
+				<p> A Cão Sem Pluma foi criada durante a pandemia de 2020 com o objetivo
+					de aumentar as fontes de rendas dos criadores e colaboradores. Todas
+					as estampas eram desenhos autorais dos nossos parceiros, a produção das
+					peças realizada manualmente e nossos fornecedores locais.
+					Nossos esforçoes sempre visaram o fortalecimento do mercado local.</p>
+
+			</section>
+
+			<div id="titulo-video">
+				<p id="-video">Confira no vídeo abaixo como era realizada nossa produção.</p>
+				<video id='index-video' controls="controls" autoplay="autoplay"
+					src="./imagens/cafofobaixatrilha.mp4"></video>
+			</div>
+
+			<section class="mapa">
+
+				<h3 class="titulo-mapa">Hoje a serigrafia está instalada no coração de Casa Amarela.</h3>
+
+				<div class="posicao-mapa">
+					<p><iframe id="imap"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.6845277730471!2d-34.92024837077647!3d-8.025916571670042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19a52f68e69b%3A0xec164f354d831df4!2sR.%20Casa%20Amarela%20-%20Casa%20Amarela%2C%20Recife%20-%20PE%2C%2052070-330!5e0!3m2!1spt-BR!2sbr!4v1649525021323!5m2!1spt-BR!2sbr"
+							width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+				</div>
+
+			</section>
+		</main>
+
+		<footer>
+			<img src="./imagens/marca/logo.png">
+			<p class="copyright">&copy; Copyright Cão Sem Pluma</p>
+		</footer>
+
+	</body>
+
+</htmal>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<htmal lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contatos - Cão Sem Pluma</title>
+        
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>  
+        
+        <header>
+            <div class="caixa">
+                <h1><img src="../csp_site/imagens/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                        <li><a href="jogo.html">Jogo</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+        <main class="main-contatos">
+            <form>
+                <label for="nomesobrenome">Nome completo</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Seu nome aqui">
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="email@domínio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for ="mensagem">Mensagem</label>   
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <fieldset>
+                    <legend> Escolha uma forma para entrarmos em contato no almoço do domingo.</legend> 
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label> 
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label> 
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label> 
+                    
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria que lotassemos seu e-mail com Spans?</label> 
+
+                    <input type="submit" value="Enviar Formulário" class="enviar">
+                </fieldset>
+            </form>
+        </main>    
+        <footer class="footer-alternativo">
+            <img src="../csp_site/imagens/csp_fundo_escuro.png">
+            <p class="copyright">&copy; Copyright Cão Sem Pluma</p>
+        </footer>   
+    </body> 
+
+</htmal>    

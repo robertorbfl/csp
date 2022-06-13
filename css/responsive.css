@@ -1,0 +1,115 @@
+@media (min-height: 649px) {
+    .container-menu{
+        display: none;
+    }
+    .ecobag {
+        max-width: 250px;
+    }
+}
+@media (max-height: 450px) {
+    video {
+        max-width: 250px;
+    }
+}
+@media (max-width: 890px) {
+    .container {
+        padding: 0px 20px;
+    }
+    video {
+        max-width: 350px;
+    }
+    .banner > img {
+        max-width: 350px;
+    }
+}
+@media (max-width:650px) {
+    /* responsividade do cabeçalho */
+    nav {
+        display: none;
+    }
+    main .container-menu img{
+        display: none;
+    } 
+    .container-menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* trasnformação do menu superior direito */
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+    label span{
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: #Ffffff;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
+    }
+    label span:nth-child(1) {
+        top: 0;
+    }
+    label span:nth-child(2) {
+        top: 8px;
+    }
+    label span:nth-child(3) {
+        top: 16px;
+    }
+    #checkbox-menu:checked + label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px
+    }
+    #checkbox-menu:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    #checkbox-menu:checked + label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px
+    }
+    /* definicoes de posicionamento do cabeçalho */
+    header {
+        min-width: 350px;
+        overflow: hidden;
+    }
+    header .conteiner {
+        height: 100%;
+    }
+    header .conteiner img {
+        margin: auto;
+    }
+    /* definições da apresentação */
+    .apresentacao {
+        flex-direction: column;
+        max-width:  350px;
+     }
+     .titulo-apresentacao {
+      width: 300px;   
+     }
+    .apresentacao p {
+        width: auto;
+    }
+    .posicao-mapa {
+        margin: -3px;
+        display: block;
+        position: center;
+        max-width:  300px;
+        background: linear-gradient(#FEFEFE, #87CEFA);
+    }
+    #imap {
+        width: auto;
+    }
+    #titulo-video {
+        font-size: 25px;
+    }
+}
